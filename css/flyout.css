@@ -45,11 +45,11 @@ main {
 }
 
 .admin__button:hover:after {
-    color: #5a5a5a;
+    color: #4d646d;
 }
 
 .button {
-    background-color: #5a5a5a;
+    background-color: #4d646d;
     width: 100%;
     text-align: left;
     font-size: 1.5em;
@@ -68,7 +68,7 @@ button:focus {
 
 .button:hover {
     background-color: #fff;
-    color: #5a5a5a;
+    color: #4d646d;
     transition: all .3s ease-in-out;
 }
 
@@ -95,7 +95,7 @@ button:focus {
     height: 0;
     border-style: solid;
     border-width: 0 1rem 1rem 1rem;
-    border-color: transparent transparent #5a5a5a transparent;
+    border-color: transparent transparent #4d646d transparent;
 }
 
 .admin__setting {
@@ -116,7 +116,7 @@ button:focus {
 }
 
 .users:hover:after {
-    color: #5a5a5a;
+    color: #4d646d;
 }
 
 .users:hover:before {
@@ -132,7 +132,7 @@ button:focus {
 }
 
 .statistics:hover:after {
-    color: #5a5a5a;
+    color: #4d646d;
 }
 
 .import:after {
@@ -143,7 +143,7 @@ button:focus {
 }
 
 .import:hover:after {
-    color: #5a5a5a;
+    color: #4d646d;
 }
 
 .slider {
@@ -158,7 +158,7 @@ button:focus {
 }
 
 .slider:hover:after {
-    color: #5a5a5a;
+    color: #4d646d;
 }
 
 .admin--flyout .admin__settings {
