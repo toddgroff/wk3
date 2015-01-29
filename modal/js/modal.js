@@ -39,7 +39,6 @@
 
 //Using this to prevent propogation of on click for body when clicking on modal box due to body event listener
     modalBox.addEventListener('click', function(e) {
-        alert('modal-click')
         e.stopPropagation();
     });
 })();
