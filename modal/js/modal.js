@@ -12,45 +12,34 @@
 
     var modalTrigger = document.querySelector('.modal--btn');
     var modal = document.querySelector('.modal');
+    var modalBox = document.querySelector('.modal__box');
+    var modalSubmit = document.querySelector('.modal__submit');
+    var modalExit = document.querySelector('.modal__exit');
+    var modalOpen = document.querySelector('.modal--open');
 
     modalTrigger.addEventListener('click', function(e) {
         e.stopPropagation();
         toggleClass(modal.parentNode, 'modal--open');
     });
 
-    var modalBodyClose = document.querySelector('body');
-    var modalSubmitClose = document.querySelector('.modal__submit');
-    var modalExitClose = document.querySelector('.modal__exit');
+    function modalClose(element) {
+        element.addEventListener('click', function(e) {
+            e.stopPropagation();
+            var modalOpen = document.querySelector('.modal--open');
+            if (modalOpen) {
+                toggleClass(modal.parentNode, 'modal--open');
+            }
+        });
+    }
 
-    modalBodyClose.addEventListener('click', function() {
-        var modalOpen = document.querySelector('.modal--open');
-        alert('that\'s my body');
-        if (modalOpen) {
-            toggleClass(modal.parentNode, 'modal--open');
-        }
-    });
+    modalClose(modal);
+    modalClose(modalExit);
+    modalClose(modalSubmit);
 
-    modalSubmitClose.addEventListener('click', function(e) {
+
+//Using this to prevent propogation of on click for body when clicking on modal box due to body event listener
+    modalBox.addEventListener('click', function(e) {
+        alert('modal-click')
         e.stopPropagation();
-        alert('close');
-        var modalOpen = document.querySelector('.modal--open');
-        if (modalOpen) {
-            toggleClass(modal.parentNode, 'modal--open');
-        }
-    });
-
-    modalExitClose.addEventListener('click', function(e) {
-        e.stopPropagation();
-        alert('exit');
-        var modalOpen = document.querySelector('.modal--open');
-        if (modalOpen) {
-            toggleClass(modal.parentNode, 'modal--open');
-        }
-    });
-
-//tried using this to preventing clicking in the modal from closing modal dialog due to body event listener
-    modal.addEventListener('click', function(e) {
-        e.stopPropagation();
-        return;
     });
 })();
