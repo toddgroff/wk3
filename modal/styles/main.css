@@ -1,0 +1,169 @@
+
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.25em;
+    padding: 0;
+    margin: 0;
+    background: url(../img/chair-designer-desk-3925.jpeg);
+    background-size: cover;
+    background-position: top-center;
+    min-height: 50em;
+
+}
+
+
+header {
+    min-height: 2em;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    opacity: 0.9;
+    width: 100%;
+}
+
+.header__bar {
+    width: 90%;
+    overflow: auto;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+nav {
+    float: right;
+}
+
+.nav__item {
+    display: inline-block;
+    padding: 1em 0 1em 0.5em;
+}
+
+.nav__item a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    font-size: 3em;
+    font-family: 'Pacifico', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 7em;
+    color: white;
+    /*text-shadow: 1px 1px 1px white;*/
+    text-transform: uppercase;
+    line-height: 1em;
+    /*float: left;*/
+    display: inline-block;
+}
+
+.banner {
+    padding-top: 6em;
+    width: 80%;
+    min-with: 40em;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #fa693b;
+    color: white;
+    border: 2px solid white;
+    height: 3em;
+    border-radius: 0;
+    display: inline-block;
+    position: absolute;
+    top: 17.5em;
+    right: 30%;
+    box-sizing: border-box;
+    font-family: 'open sans condensed', sans-serif;
+    font-size: 1.5em;
+    padding: 0 0.5em 0 0.5em;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+    border: none;
+    color: #fa693b;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    opacity: 1;
+}
+
+.clear {
+    clear: both;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    visibility: hidden;
+}
+
+.modal__box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    min-width: 15em;
+    background-color: white;
+    padding: 3em 2em;
+}
+
+.modal__content h3 {
+    padding-bottom: 1em;
+}
+
+.modal__exit {
+    position: absolute;
+    top: 0.1em;
+    right: 0.4em;
+    font-size: 1.25em;
+    cursor: pointer;
+}
+
+.modal__form {
+    display: block;
+    margin: 1em auto 0 auto;
+}
+
+.modal__form{
+    height: 3rem;
+    width: 15rem;
+    font-size: 1em;
+}
+
+input.modal__form:focus {
+    outline: none;
+}
+
+.modal__submit {
+    background-color: white;
+    box-sizing: content-box;
+    font-family: 'open sans condensed', sans-serif;
+    font-size: 1.5em;
+    opacity: 0.9;
+    cursor: pointer;
+    background-color: #fa693b;
+    color: white;
+    border: none;
+}
+
+.modal--open .modal {
+    visibility: visible;
+    transition: all 0.5s ease-in-out;
+}

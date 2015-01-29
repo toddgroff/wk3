@@ -1,6 +1,6 @@
 (function() {
     function toggleClass(element, className) {
-    var currentClasses = element.className;
+        var currentClasses = element.className;
 
         if (currentClasses.indexOf(className) >= 0) {
             element.className = currentClasses.replace(className, '').trim();
@@ -12,13 +12,17 @@
 
     var menuMove = document.querySelector('.admin__button');
 
-    menuMove.addEventListener('click', function() {
+    menuMove.addEventListener('click', function(e) {
+        e.stopPropagation();
         toggleClass(menuMove.parentNode, 'admin--flyout');
     });
 
-    // var menuClose = document.querySelector('body');
-    //
-    // menuClose.addEventListener('click', function() {
-    //     removeClass =
-    // })
+    var menuClose = document.querySelector('body');
+
+    menuClose.addEventListener('click', function() {
+        var flyout = document.querySelector('.admin--flyout');
+        if (flyout) {
+            toggleClass(menuMove.parentNode, 'admin--flyout');
+        }
+    });
 })();
