@@ -1,2 +1,2 @@
 # wk3
-Continued Javascript assignments
+Continued JavaScript assignments
