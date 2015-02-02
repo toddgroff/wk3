@@ -1,0 +1,113 @@
+/* TODO: Style your site */
+
+body {
+    background: #e2e2e2;
+    font-family: 'Oxygen', sans-serif;
+
+}
+
+header {
+    width: 100%;
+    min-height: 5em;
+    background-color: #005eb0;
+    box-shadow: 0 0 15px 0 #5a5a5a;
+}
+
+main {
+    width: 90%;
+    min-width: 50em;
+    background: white;
+    margin: 2em auto;
+    border-radius: 0.2rem;
+    overflow: auto;
+    min-height: 50em;
+    box-shadow: inset 0 0 30px 0 #e2e2e2;
+    box-shadow: 0 0 20px 0 #c9c9c9;
+
+
+}
+
+input {
+    height: 3em;
+    width: 15em;
+    /*padding: 0.25em;*/
+    background-color: #e2e2e2;
+    border: none;
+    box-shadow: inset 0 0 2px 0 #c9c9c9;
+    margin: 0.5em 0 1.5em 0;
+    padding-left: 0.5em;
+    border-radius: 0.25em;
+}
+
+aside {
+    width: 15%;
+    min-width: 8em;
+    float: left;
+    background: #daedf5;
+    padding-bottom: 90%;
+    box-shadow: inset -5px 0 10px 0 #e2e2e2;
+}
+
+/*why isn't this working*/
+aside:before {
+    content: " ";
+    width: 0;
+    padding-bottom: 100%;
+    z-index: 1000;
+}
+
+.form-container {
+    display: inline-block;
+    padding: 2em;
+    float: left;
+}
+
+.form-container input {
+    display: block;
+
+}
+
+.add-user-heading {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 1em;
+}
+
+.user-form label {
+    font-weight: 300;
+}
+
+.user-container {
+    display: inline-block;
+    float: right;
+    padding: 2em;
+    width: 40%;
+    min-width: 20em;
+}
+
+.user__sort, .user__search {
+    display: inline-block;
+}
+
+.user-info {
+    background: #daedf5;
+    box-shadow: 0 0 5px 0 #c9c9c9;
+    width: 100%;
+    overflow: auto;
+    padding: 1.5em;
+    border-radius: 0.03em;
+    float: right;
+}
+
+.user-full-name {
+    text-transform: capitalize;
+    float: left;
+}
+
+.user-email {
+    margin: 0 auto;
+}
+
+.user-remove-user {
+    float: right;
+}

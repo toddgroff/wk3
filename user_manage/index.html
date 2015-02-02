@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Management</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header>
+        <span class="logo">
+        </span><span class="Admin"
+        <span class="user-name">
+        </span>
+        <span class="settings">
+        </span>
+    </header>
+    <main>
+        <aside class="main-nav">
+            <ul class="main-nav__list">
+                <li class="edit-users">
+                    Edit Users
+                </li>
+            </ul>
+        </aside>
+        <div class="form-container">
+            <h1 class="add-user-heading">New User</h1>
+            <form class="user-form">
+                <label>First Name<input type="text" class="first-name" required="required"></label>
+
+                <label>Last name<input type="text" class="last-name" required="required"></label>
+                <label>Email<input type="email" class="email" required="required"></label>
+                <input type="submit" class="submit-button" value="Add User">
+            </form>
+        </div>
+        <div class="user-container">
+            <select class="user__sort">
+                <option class="sort-asdc" value="1">
+                    A-Z
+                </option>
+                <option class="sort-desc" value="2">
+                    Z-A
+                </option>
+            </select>
+            <input type="text" class"user__search" placeholder="search">
+            <ul class="user__list">
+            </ul>
+        </div>
+    </main>
+
+  <script src="js/object-store.js"></script>
+  <script src="js/user.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- TODO: add more scripts here that use the
+  classes defined in the previous scripts -->
+
+</body>
+</html>
